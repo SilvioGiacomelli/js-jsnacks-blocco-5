@@ -93,3 +93,14 @@ console.log(ribaltamentoStringa("Pompelmo"));
 
 ///Snack 4///
 
+const arrayUno = ['a','b','c','d','e','f'];
+const arrayDue = [1, 2, 3, 4, 5, 6];
+
+const arrayTre = [];
+
+for (let i = 0; i < arrayUno.length; i++){
+  arrayTre.push(arrayUno[i]);
+  arrayTre.push(arrayDue[i]);
+}
+
+console.log(arrayTre);
