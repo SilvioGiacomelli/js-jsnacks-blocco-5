@@ -107,9 +107,9 @@ console.log(arrayTre);
 
 ///Snack 5///
 
-const array = ['a','b','c','d','e','f','g'];
-const alfA = 1;
-const betA = 5;
+const array = ['a','b','c','d','e','f','g','h','i','l','m'];
+const alfA = 3;
+const betA = 8;
 
 function estrazioneArray(array, alfA, betA) {
   const sottoArray = [];
