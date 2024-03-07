@@ -82,3 +82,14 @@ const pesoBig = zucchineBig.reduce((totale, zucchina) =>{
 }, 0);
 
 console.log("Il totale del peso delle zucchine è: " + pesoBig + "kg");
+
+///Snack 3///
+
+function ribaltamentoStringa(stringa) {
+  return stringa.split('').reverse().join('');
+}
+
+console.log(ribaltamentoStringa("Pompelmo"));
+
+///Snack 4///
+
