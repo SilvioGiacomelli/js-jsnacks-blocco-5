@@ -104,3 +104,21 @@ for (let i = 0; i < arrayUno.length; i++){
 }
 
 console.log(arrayTre);
+
+///Snack 5///
+
+const array = ['a','b','c','d','e','f','g'];
+const alfA = 1;
+const betA = 5;
+
+function estrazioneArray(array, alfA, betA) {
+  const sottoArray = [];
+
+  for (let i = alfA; i <= betA; i++) {
+    sottoArray.push(array[i]);
+  }
+  return sottoArray;
+}
+
+const risultato = estrazioneArray(array, alfA, betA);
+console.log(risultato);
