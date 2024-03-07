@@ -8,12 +8,12 @@ const zucchine = [
   {
     varieta : 'roma',
     peso : 3,
-    lunghezza : 2,
+    lunghezza : 25,
   },
   {
     varieta : 'verona',
     peso : 12,
-    lunghezza : 3,
+    lunghezza : 30,
   },
   {
     varieta : 'napoli',
@@ -52,8 +52,33 @@ const zucchine = [
   }
 ];
 
+///Snack 1///
 const pesoTot = zucchine.reduce((totale, zucchina) => {
   return totale + zucchina.peso;
 }, 0);
 
 console.log("Il totale del peso delle zucchine è: " + pesoTot + "kg");
+
+///Snack 2///
+
+const zucchineBig = zucchine.filter(function(zucchina) {
+  return zucchina.lunghezza > 15;
+});
+const zucchineSmall = zucchine.filter(function(zucchina) {
+  return zucchina.lunghezza < 15;
+});
+
+console.log(zucchineBig)
+console.log(zucchineSmall)
+
+const pesoSmall = zucchineSmall.reduce((totale, zucchina) =>{
+  return totale + zucchina.peso;
+}, 0);
+
+console.log("Il totale del peso delle zucchine è: " + pesoSmall + "kg");
+
+const pesoBig = zucchineBig.reduce((totale, zucchina) =>{
+  return totale + zucchina.peso;
+}, 0);
+
+console.log("Il totale del peso delle zucchine è: " + pesoBig + "kg");
