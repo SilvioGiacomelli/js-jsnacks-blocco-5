@@ -53,11 +53,11 @@ const zucchine = [
 ];
 
 ///Snack 1///
-const pesoTot = zucchine.reduce((totale, zucchina) => {
-  return totale + zucchina.peso;
+const pesoTot = zucchine.reduce((somma, zucchina) => {
+  return somma + zucchina.peso;
 }, 0);
 
-console.log("Il totale del peso delle zucchine è: " + pesoTot + "kg");
+console.log("Le zucchine pesano: " + pesoTot + "tonnellate");
 
 ///Snack 2///
 
@@ -71,17 +71,17 @@ const zucchineSmall = zucchine.filter(function(zucchina) {
 console.log(zucchineBig)
 console.log(zucchineSmall)
 
-const pesoSmall = zucchineSmall.reduce((totale, zucchina) =>{
-  return totale + zucchina.peso;
+const pesoSmall = zucchineSmall.reduce((somma, zucchina) =>{
+  return somma + zucchina.peso;
 }, 0);
 
-console.log("Il totale del peso delle zucchine è: " + pesoSmall + "kg");
+console.log("Il peso delle zcchine corte è: " + pesoSmall + "tonnellate");
 
-const pesoBig = zucchineBig.reduce((totale, zucchina) =>{
-  return totale + zucchina.peso;
+const pesoBig = zucchineBig.reduce((somma, zucchina) =>{
+  return somma + zucchina.peso;
 }, 0);
 
-console.log("Il totale del peso delle zucchine è: " + pesoBig + "kg");
+console.log("Il peso delle zucchine lunghe è: " + pesoBig + "tonnellate");
 
 ///Snack 3///
 
